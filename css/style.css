@@ -17,7 +17,7 @@
     position: relative;
     border-radius: 50px;
     overflow: hidden;
-    transition: all .5s;
+    transition: flex .5s ease;
     margin: 5px;
 
 
@@ -33,7 +33,7 @@
     left: 5%;
     color: aliceblue;
     white-space: nowrap;
-    transition: all .5s;
+    transition: opacity .5s ease, visibility .5s;
     opacity: 0;
     visibility: hidden;
  }
@@ -86,4 +86,26 @@ section .card.active .card-title{
 .card:focus-visible {
     outline: 3px solid #155eef;
     outline-offset: 3px;
+}
+
+/* Keep captions readable against bright and detailed photos. */
+section .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0) 65%);
+    pointer-events: none;
+}
+section .card .card-title {
+    z-index: 1;
+    color: #fff;
+    text-shadow: 0 1px 3px #000;
+}
+
+/* Respect the device's reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+    section .card,
+    section .card .card-title {
+        transition: none;
+    }
 }
