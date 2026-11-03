@@ -31,7 +31,7 @@ The layout switches to horizontal cards on wider screens.
 2. Open `index.html` in your browser. Keep the `css`, `js`, and `assets` folders beside it so styles, scripts, and images load correctly.
 3. Optionally, open the folder in VS Code and serve `index.html` with the Live Server extension.
 
-These instructions run whichever branch you downloaded or cloned. While improvements are under review, select the `improve/keyboard-accessibility` branch before downloading, or check out that branch after cloning.
+The default branch, `main`, contains the current version of the project.
 
 ## Controls
 
@@ -81,4 +81,4 @@ See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/
 
 ## Project status
 
-This is a learning project being developed into a portfolio piece. The accessibility and presentation improvements are tracked in [pull request #1](https://github.com/Shariatypour/Expanding-Cards/pull/1). A public live demo has not been set up yet.
+This learning project demonstrates responsive layouts, DOM events, and accessible card selection. See [pull request #1](https://github.com/Shariatypour/Expanding-Cards/pull/1) for the implementation history. A public live demo has not been set up yet.
