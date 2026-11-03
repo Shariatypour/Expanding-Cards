@@ -1,15 +1,13 @@
-const sliderItems=document.querySelectorAll('section div')
-const removeActiveClass=()=>{
-    for( let i=0;i<sliderItems.length;i++){
-        sliderItems[i].classList.remove('active')
-    }
+const cards = document.querySelectorAll('.card');
 
-};
+function activateCard(selectedCard) {
+    cards.forEach((card) => {
+        const isActive = card === selectedCard;
+        card.classList.toggle('active', isActive);
+        card.setAttribute('aria-pressed', String(isActive));
+    });
+}
 
-for( let i=0;i<sliderItems.length;i++){
-    sliderItems[i].addEventListener('click',()=>{
-        removeActiveClass()
-        sliderItems[i].classList.add('active')
-    })
-
-};
+cards.forEach((card) => {
+    card.addEventListener('click', () => activateCard(card));
+});
