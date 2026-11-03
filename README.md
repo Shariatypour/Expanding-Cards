@@ -2,6 +2,10 @@
 
 An interactive travel photo gallery built with HTML, CSS, and vanilla JavaScript. Select a photo card to expand it and reveal its caption.
 
+## Live demo
+
+[Open the live gallery](https://shariatypour.github.io/Expanding-Cards/)
+
 ## Preview
 
 ![Expanding Cards gallery with an introduction and five vertically arranged photo cards](docs/preview.png)
@@ -81,4 +85,4 @@ See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/
 
 ## Project status
 
-This learning project demonstrates responsive layouts, DOM events, and accessible card selection. See [pull request #1](https://github.com/Shariatypour/Expanding-Cards/pull/1) for the implementation history. A public live demo has not been set up yet.
+This learning project demonstrates responsive layouts, DOM events, and accessible card selection. See [pull request #1](https://github.com/Shariatypour/Expanding-Cards/pull/1) for the implementation history. The live demo is hosted on GitHub Pages and published from `main`.
