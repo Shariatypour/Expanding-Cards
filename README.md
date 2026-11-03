@@ -2,6 +2,12 @@
 
 An interactive travel photo gallery built with HTML, CSS, and vanilla JavaScript. Select a photo card to expand it and reveal its caption.
 
+## Preview
+
+![Expanding Cards gallery with an introduction and five vertically arranged photo cards](docs/preview.png)
+
+The layout switches to horizontal cards on wider screens.
+
 ## Features
 
 - Five travel photo cards with one selected at a time.
@@ -60,6 +66,18 @@ On smaller screens, `flex-direction: column` changes expansion from horizontal t
 - At 390px width, check that all five cards can be selected without horizontal scrolling.
 - At 1280px width, check that the cards form a horizontal row.
 - Enable reduced motion in your device settings and confirm that selection changes without transitions.
+
+## Publish with GitHub Pages
+
+After the reviewed changes have been merged into `main`:
+
+1. Open the repository's **Settings → Pages**.
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+3. Select **main** and **/(root)**, then save.
+4. Wait for deployment to complete and open the site URL shown by GitHub Pages.
+5. Test the live site's images, styles, card selection, and keyboard controls before adding its URL to this README.
+
+See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Project status
 
