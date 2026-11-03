@@ -109,3 +109,35 @@ section .card .card-title {
         transition: none;
     }
 }
+
+body {
+    font-family: system-ui, sans-serif;
+    color: #172033;
+    background: #f6f8fb;
+}
+.page-header {
+    width: 90%;
+    margin: 32px auto 0;
+}
+.page-header h1 {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.page-header p {
+    line-height: 1.6;
+}
+.gallery-help {
+    margin-top: 8px;
+    color: #475569;
+    font-size: .9rem;
+}
+main section {
+    margin-top: 24px;
+}
+@media (max-width: 600px) {
+    .page-header {
+        width: calc(100% - 32px);
+        margin-top: 24px;
+    }
+}
